@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<title>Zelda II: The Map Extractor</title>
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+	<h1>Zelda II: The Map Extractor</h1>
+
+	<fieldset>
+	    <ul style="list-style-type:none;">
+	        <li>
+			<label for="legacy">Legacy Mode</label>
+			<input type="checkbox" id="legacy" value="legacy"/><br/>
+			</li>
+			<span id="modern">
+			    <p>Select which maps are vanilla. If you don't know, leave them unchecked. If the bottom of a map is filled with garbage tiles, try to check its checkbox here and try again.</p>
+				<li>
+				<label for="vanillawest">Vanilla West</label>
+				<input type="checkbox" id="vanillawest" value="vanillawest"/><br/>
+				</li>
+				<li>
+				<label for="vanillawest">Vanilla East</label>
+				<input type="checkbox" id="vanillaeast" value="vanillaeast"/><br/>
+				</li>
+				<li>
+				<label for="vanillawest">Vanilla Death Mountain</label>
+				<input type="checkbox" id="vanilladm" value="vanilladm"/><br/>
+				</li>
+				<li>
+				<label for="vanillawest">Vanilla Maze Island</label>
+				<input type="checkbox" id="vanillamaze" value="vanillamaze"/><br/>
+				</li>
+				<p>The bottom of generated maps may be padded with lots of mountain tiles. This is just the way the randomizer generates maps.</p>
+			</span>
+		</ul>
+		<label for="file">Select a Zelda II Rom</label> 
+		<input type="file" id="file" name="file" />
+	</fieldset>
+	
+	<div id="output-container">&nbsp;</div>
+
+	<a href="https://github.com/pgooch/zelda-2-map-extractor"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+	<script src="./map-extractor.js"></script>
+</body>
+</html>
+
+
